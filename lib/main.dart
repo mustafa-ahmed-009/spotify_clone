@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify/core/router.dart';
+import 'package:spotify/core/config/router.dart';
 import 'package:spotify/core/themes/app_light_theme.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class SpotifyClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       routerConfig: router,
     );
