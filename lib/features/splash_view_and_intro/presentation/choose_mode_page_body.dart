@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:spotify/core/assets/app_images.dart';
 import 'package:spotify/core/assets/app_vectors.dart';
 import 'package:spotify/core/config/router.dart';
 import 'package:spotify/core/widgets/custom_button.dart';
-import 'package:spotify/features/splash_view_and_intro/choose_mode_page_body_button_row.dart';
+import 'package:spotify/features/splash_view_and_intro/presentation/choose_mode_page_body_button_row.dart';
 
 class ChooseModePageBody extends StatelessWidget {
   const ChooseModePageBody({super.key});
@@ -20,8 +19,8 @@ class ChooseModePageBody extends StatelessWidget {
             height: 5,
           ),
           Align(
-            child: SvgPicture.asset(AppVectors.logo),
             alignment: Alignment.center,
+            child: SvgPicture.asset(AppVectors.logo),
           ),
           const Spacer(),
           const Text(

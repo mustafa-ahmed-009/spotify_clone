@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spotify/core/assets/app_vectors.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:spotify/features/splash_view_and_intro/presentation/managers/theme_cubit.dart';
 
 class SelectedModeRow extends StatefulWidget {
   const SelectedModeRow({super.key});
@@ -22,12 +23,14 @@ class _SelectedModeRowState extends State<SelectedModeRow> {
             InkWell(
               onTap: () {
                 setState(() {
+                  context.read<ThemeCubit>().updateThemeMode(ThemeMode.dark);
+
                   darkModeActive = true;
                   lightModeActive = false;
                 });
               },
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     color: darkModeActive
                         ? Colors.white.withOpacity(0.3)
@@ -40,23 +43,24 @@ class _SelectedModeRowState extends State<SelectedModeRow> {
                 ),
               ),
             ),
-            Text("Dark Mode")
+            const Text("Dark Mode")
           ],
         ),
-        SizedBox(
+        const SizedBox(
           width: 150,
         ),
         Column(
           children: [
             InkWell(
               onTap: () {
+                context.read<ThemeCubit>().updateThemeMode(ThemeMode.light);
                 setState(() {
                   darkModeActive = false;
                   lightModeActive = true;
                 });
               },
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     color: lightModeActive
                         ? Colors.white.withOpacity(0.3)
@@ -69,7 +73,7 @@ class _SelectedModeRowState extends State<SelectedModeRow> {
                 ),
               ),
             ),
-            Text("Light mode"),
+            const Text("Light mode"),
           ],
         ),
       ],

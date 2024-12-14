@@ -33,14 +33,14 @@ class GettingStartedPageBody extends StatelessWidget {
               "Enjoy Listening To music",
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             const Text(
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
               style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             CustomButton(
