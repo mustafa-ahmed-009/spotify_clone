@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:spotify/core/assets/app_images.dart';
 import 'package:spotify/core/assets/app_vectors.dart';
+import 'package:spotify/core/config/router.dart';
 import 'package:spotify/core/widgets/custom_app_bar.dart';
 import 'package:spotify/core/widgets/custom_button.dart';
 
@@ -57,14 +59,20 @@ class AuthViewBody extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                        child:
-                            CustomButton(onPressed: () {}, title: "Register")),
+                        child: CustomButton(
+                            onPressed: () {
+                              GoRouter.of(context).go(kSignUpPage);
+                            },
+                            title: "Register")),
                     const SizedBox(
                       width: 10,
                     ),
                     Expanded(
-                        child:
-                            CustomButton(onPressed: () {}, title: "Sign In")),
+                        child: CustomButton(
+                            onPressed: () {
+                              GoRouter.of(context).go(kSignInPage);
+                            },
+                            title: "Sign In")),
                   ],
                 )
               ],

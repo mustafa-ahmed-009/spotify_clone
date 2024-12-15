@@ -42,7 +42,7 @@ class ChooseModePageBody extends StatelessWidget {
           ),
           CustomButton(
               onPressed: () {
-                GoRouter.of(context).go(kAuthPage);
+                GoRouter.of(context).go(kAuthModePage);
               },
               title: "Continue")
         ],
