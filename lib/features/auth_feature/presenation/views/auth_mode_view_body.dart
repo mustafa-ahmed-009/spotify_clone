@@ -15,7 +15,7 @@ class AuthViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        CustomAppBar(),
+        const BackWardIcon(),
         Align(
           alignment: Alignment.topRight,
           child: SvgPicture.asset(AppVectors.topPattern),
@@ -61,7 +61,7 @@ class AuthViewBody extends StatelessWidget {
                     Expanded(
                         child: CustomButton(
                             onPressed: () {
-                              GoRouter.of(context).go(kSignUpPage);
+                            context.push(kSignUpPage);
                             },
                             title: "Register")),
                     const SizedBox(
@@ -70,7 +70,7 @@ class AuthViewBody extends StatelessWidget {
                     Expanded(
                         child: CustomButton(
                             onPressed: () {
-                              GoRouter.of(context).go(kSignInPage);
+                             context.push(kSignInPage);
                             },
                             title: "Sign In")),
                   ],

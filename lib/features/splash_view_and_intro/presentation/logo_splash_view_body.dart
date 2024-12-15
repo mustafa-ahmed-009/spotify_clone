@@ -28,7 +28,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   Future<void> redirect() async {
     await Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
-        GoRouter.of(context).go(kGettingStartedPage);
+        context.push(kGettingStartedPage);
       }
     });
   }

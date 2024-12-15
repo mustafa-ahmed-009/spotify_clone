@@ -37,6 +37,9 @@ class _SelectedModeRowState extends State<SelectedModeRow> {
                         : Colors.white.withOpacity(0),
                     borderRadius: BorderRadius.circular(40)),
                 child: SvgPicture.asset(
+                  colorFilter: darkModeActive
+                      ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                      : ColorFilter.mode(Colors.black, BlendMode.srcIn),
                   AppVectors.moon,
                   height: 60,
                   width: 60,
@@ -67,6 +70,9 @@ class _SelectedModeRowState extends State<SelectedModeRow> {
                         : Colors.white.withOpacity(0),
                     borderRadius: BorderRadius.circular(40)),
                 child: SvgPicture.asset(
+                  colorFilter: darkModeActive
+                      ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                      : ColorFilter.mode(Colors.black, BlendMode.srcIn),
                   AppVectors.sun,
                   height: 60,
                   width: 60,

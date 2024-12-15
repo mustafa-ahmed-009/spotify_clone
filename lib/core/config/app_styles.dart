@@ -4,7 +4,7 @@ abstract class AppStyles {
   static TextStyle styleRegular12(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 12),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w400,
     );
   }
@@ -12,7 +12,7 @@ abstract class AppStyles {
   static TextStyle styleRegular14(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 14),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w400,
     );
   }
@@ -20,7 +20,7 @@ abstract class AppStyles {
   static TextStyle styleRegular16(context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w400,
     );
   }
@@ -28,7 +28,7 @@ abstract class AppStyles {
   static TextStyle styleMedium16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w500,
     );
   }
@@ -36,7 +36,7 @@ abstract class AppStyles {
   static TextStyle styleRegualr18(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w400,
     );
   }
@@ -44,7 +44,7 @@ abstract class AppStyles {
   static TextStyle styleBold16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w700,
     );
   }
@@ -52,7 +52,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold16(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
     );
   }
@@ -60,7 +60,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold18(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 18),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
     );
   }
@@ -68,7 +68,7 @@ abstract class AppStyles {
   static TextStyle sytleLight20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w300,
     );
   }
@@ -76,7 +76,7 @@ abstract class AppStyles {
   static TextStyle styleMedium20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w300,
     );
   }
@@ -84,7 +84,7 @@ abstract class AppStyles {
   static TextStyle styleRegular20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w400,
     );
   }
@@ -92,7 +92,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
     );
   }
@@ -100,7 +100,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold22(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 22),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
     );
   }
@@ -108,7 +108,7 @@ abstract class AppStyles {
   static TextStyle styleSemiBold24(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 24),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
     );
   }
@@ -116,8 +116,16 @@ abstract class AppStyles {
   static TextStyle styleSemiBold28(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 28),
-      fontFamily: 'GT Sectra Fine',
+      fontFamily: 'Satoshi',
       fontWeight: FontWeight.w600,
+    );
+  }
+
+  static TextStyle styleBold28(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, fontSize: 28),
+      fontFamily: 'Satoshi',
+      fontWeight: FontWeight.bold,
     );
   }
 }

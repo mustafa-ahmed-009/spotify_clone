@@ -46,7 +46,7 @@ class GettingStartedPageBody extends StatelessWidget {
             CustomButton(
               title: "Get Started",
               onPressed: () {
-                GoRouter.of(context).go(kChooseModePage);
+             context.push(kChooseModePage);
               },
             )
           ],

@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:spotify/core/config/router.dart';
-import 'package:spotify/core/themes/app_light_theme.dart';
+import 'package:spotify/core/themes/app_themes.dart';
 import 'package:spotify/features/splash_view_and_intro/presentation/managers/theme_cubit.dart';
 
 Future<void> main() async {

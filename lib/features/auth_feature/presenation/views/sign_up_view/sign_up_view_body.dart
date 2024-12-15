@@ -1,10 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:spotify/core/assets/app_vectors.dart';
+import 'package:spotify/core/config/app_styles.dart';
+import 'package:spotify/core/widgets/custom_app_bar.dart';
+import 'package:spotify/core/widgets/custom_button.dart';
+import 'package:spotify/core/widgets/custom_text_field.dart';
 
 class SignUpViewBody extends StatelessWidget {
   const SignUpViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Text("data");
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              const BackWardIcon(),
+              const Spacer(),
+              SvgPicture.asset(AppVectors.logo),
+              const Spacer(),
+            ],
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              spacing: 15,
+              children: [
+                Text(
+                  "Register",
+                  style: AppStyles.styleBold28(context),
+                ),
+                const CustomTextField(
+                  text: "Full name",
+                ),
+                const CustomTextField(
+                  text: "Enter Email",
+                ),
+                const CustomTextField(
+                  text: "Enter Password",
+                ),
+                CustomButton(onPressed: () {}, title: "Create an account")
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
